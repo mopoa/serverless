@@ -1,0 +1,10 @@
+provider:
+  name: openfaas
+  gateway: http://192.168.49.2:31112
+
+functions:
+  watermelon-a4:
+    image: mopoa/watermelon:latest
+    lang: csharp
+    handler: ./MyCSharpFunction
+
